@@ -72,7 +72,7 @@ def get_weather(zip_code, forecast_type):
             trimmed_dict["time"] = format_time(response_dict["time"])
             #if an alert, also convert the time it expires
             if forecast == "alerts":
-                trimmed_dict["expires"] = format_time(response_dict["time"])
+                trimmed_dict["expires"] = format_time(response_dict["expires"])
             #for each key needed,
             for key in key_list:
                 #if in the response, add it. If not, add -1 to indicate it's not

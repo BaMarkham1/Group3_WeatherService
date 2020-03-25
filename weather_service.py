@@ -8,10 +8,10 @@ import json
 import weather_grabber as wg
 
 #set the zip code you want here
-zip_code = "80215"
+zip_code = "67735"
 #set the type of forecast you want
 #valid types: currently, daily, hourly, and alerts
-forecast_type = "daily"
+forecast_type = "alerts"
 #call the weather_grabber module's get_weather function
 data = wg.get_weather(zip_code, forecast_type)
 #this is a default way to print a json in an organized fashion
